@@ -72,4 +72,4 @@ exports.getUserProfiles = async function (req, res) {
     var user = await User.findOne({_id: userId}).select("-password");
 
     res.status(200).json(user);
-}
+};
